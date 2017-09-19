@@ -16,3 +16,20 @@ function nowServing(array) {
   }
   return messa;
 }
+
+function currentLine(line) {
+  var messa;
+  if (line[0] == undefined){
+    messa = "The line is currently empty.";
+    return messa;
+  }
+  messa = "The line is currently: ";
+  for (var i = 0; i < line.length; ) {
+    if (i == line.length-1) {
+      messa += messa + ++i +". "+ line[i] +"";
+
+    }
+    messa += messa + ++i +". "+ line[i] +", ";
+  }
+  return messa;
+}
