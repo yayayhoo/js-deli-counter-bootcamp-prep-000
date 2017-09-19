@@ -29,8 +29,9 @@ function currentLine(line) {
     if (i == line.length-1) {
       messa += i1 +". "+ line[i] +"";
 
-    }
+    }else {
     messa += i1 +". "+ line[i] +", ";
   }
+}
   return messa;
 }
