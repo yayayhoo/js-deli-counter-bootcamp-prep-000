@@ -26,10 +26,10 @@ function currentLine(line) {
   messa = "The line is currently: ";
   for (var i = 0; i < line.length; ) {
     if (i == line.length-1) {
-      messa += messa + ++i +". "+ line[i] +"";
+      messa += ++i +". "+ line[i] +"";
 
     }
-    messa += messa + ++i +". "+ line[i] +", ";
+    messa += ++i +". "+ line[i] +", ";
   }
   return messa;
 }
