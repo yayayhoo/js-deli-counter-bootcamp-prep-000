@@ -24,12 +24,13 @@ function currentLine(line) {
     return messa;
   }
   messa = "The line is currently: ";
-  for (var i = 0; i < line.length; ) {
+  for (var i = 0; i < line.length; i++) {
+    var i1 = i+1;
     if (i == line.length-1) {
-      messa += ++i +". "+ line[i] +"";
+      messa += i1 +". "+ line[i] +"";
 
     }
-    messa += ++i +". "+ line[i] +", ";
+    messa += i1 +". "+ line[i] +", ";
   }
   return messa;
 }
